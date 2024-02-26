@@ -39,11 +39,11 @@
            
             h1{
                 // font-size: 30px;
-                font-size: 5vh;
+                font-size: 10vw;
             }
             
             h2{
-                font-size: 2.5vh;
+                font-size: 5vw;
             }
         }
     
@@ -66,14 +66,14 @@
             padding: 5vh 5vw;
     
             h2{
-                font-size: 7vh;
+                font-size: 10vw;
                 text-align: center;
             }
     
             p{
                 padding-top: 5vh;
-                font-size: 3.5vh;
-                line-height: 5.5vh;
+                font-size: 5.5vw;
+                line-height: 8vw;
             }
         }
 
@@ -104,7 +104,7 @@
                     width: 100vw;
                     background-image: url(../assets/asset002.jpg);
                     background-size: cover;
-                    background-position: right;
+                    background-position: center;
                     position: relative;
     
                     .servicios_container_gradient{
@@ -127,10 +127,10 @@
                         position: absolute;
                         top: 0;
                         left: 0;
-                        padding: 20%;
+                        padding: 9vw;
     
                         h3{
-                            font-size: 3.5vh;
+                            font-size: 6vw;
                             font-weight: 500;
                             border-bottom: solid 2px #005AB4;
                             padding-bottom: 10px;
@@ -138,14 +138,260 @@
     
                         p{
                             padding-top: 2.5vh;
-                            font-size: 2.5vh;
-                            line-height: 3vh;
+                            font-size: 4.5vw;
+                            line-height: 6vw;
                         }
                     }
                 }
             }
         }
 
+        #contenedores{
+            display: flex;
+            flex-direction: column;
+            margin-top: 75vh;
+            width: 100vw;
+            height: 120vh;
+            background-image: url(../assets/bg4.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+    
+            .contenedores_textbox{
+                width: 90vw;
+                height: auto;
+                background-color: white;
+                position: absolute;
+                top: 60vh;
+                left: 5vw;
+    
+                div{
+                    padding: 9vw;
+                    
+                    h3{
+                        font-size: 6vw;
+                        font-weight: 500;
+                        border-bottom: solid 2px #005AB4;
+                        padding-bottom: 10px;
+                    }
+
+                    p{
+                        padding-top: 2.5vh;
+                        font-size: 4.5vw;
+                        line-height: 6vw;
+                    }
+                }
+            }
+    
+            .contenedores_img{
+                height: 60vh;
+                width: 100vw;
+                background-image: url(../assets/asset003.jpg);
+                background-size: cover;
+                background-position: left;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        #equipo{
+            height: 60vh;
+    
+            .equipo_textbox{
+                width: 90vw;
+                height: auto;
+                top: 60vh;
+                right: 5vw;
+                padding: 9vw;
+    
+                h3{
+                    font-size: 6vw;
+                    font-weight: 500;
+                    border-bottom: solid 2px #005AB4;
+                    padding-bottom: 10px;
+                }
+
+                p{
+                    padding-top: 2.5vh;
+                    font-size: 4.5vw;
+                    line-height: 6vw;
+                }
+    
+            }
+        }
+
+        #pre_contacto{
+            margin-top: 80vh;
+
+            h2{
+                font-size: 14vw;
+            }
+
+        }
+
+        #contacto{
+            background-image: url(../assets/bg7.png);
+            background-size: 100vw 90vh;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            display: grid;
+            grid-template-columns: 10vw 55vw 35vw;
+            grid-template-rows: 10vh 70vh 10vh 80vh;
+            grid-template-areas: 
+                ". . side1"
+                ". info info"
+                ". . side2"
+                "form form form";
+    
+            form{
+                grid-area: form;
+                padding: 10% 5vw;
+    
+                h4{
+                    font-size: 10vw;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                    
+                }
+    
+                div{
+                    .inputtext{
+                        background: none;
+                        border: none;
+                        // border-bottom: solid 1px #d6d6d6;
+                        width: 90vw;
+                        margin: 30px 0;
+                        height: 4vh;
+                        font-size: 5vw;
+                        transition: 1s;
+    
+                        // &:hover{
+                        //     border-bottom: solid 1px #b10058;
+                        // }
+                    }
+    
+                    .mensaje{
+                        font-weight: 200;
+                    }
+    
+                    .sendbutton{
+                        border: none;
+                        height: 7vh;
+                        width: 90vw;
+                        margin-top: 3vh;
+                    }
+    
+    
+                }
+            }
+    
+            .info{
+
+                padding: 40px;
+    
+                h4{
+                    font-size: 9vw;
+                }
+    
+                .infotexto{
+                    margin: 10vw 0;
+                }
+
+                .infotexto_long{
+                    margin-bottom: 18vw;
+                }
+    
+                p{
+                    margin-left: 20px;
+                    height: 25px;
+                    font-size: 5vw;
+                }
+                
+            }
+    
+            .side1{
+                grid-area: side1;
+            }
+    
+            .side2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+    
+                img{
+                    margin: 0 15px;
+                    width: 25px;
+                }
+
+                .arrow{
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    #footer{
+        margin-top: 15vh;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    
+        .footer_logo{
+            width: 50vw;
+            height: 40%;
+            background-image: url(../assets/logo02.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 5vw 0;
+    
+        }
+    
+        .footer_info{
+            width: 90vw;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 5vw 0;
+    
+            p{
+                .bold{
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        .footer_menu{
+            width: 90vw;
+            height: 30%;
+            padding: 5vw 0;
+    
+            ul{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+    
+                li{
+                    text-align: left;
+    
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            
+        }
     }
 
 

@@ -605,10 +605,10 @@ body {
     background-position: center;
   }
   #header .header_logo h1 {
-    font-size: 5vh;
+    font-size: 10vw;
   }
   #header .header_logo h2 {
-    font-size: 2.5vh;
+    font-size: 5vw;
   }
   #header .header_img {
     position: absolute;
@@ -625,13 +625,13 @@ body {
     padding: 5vh 5vw;
   }
   #main #nosotros h2 {
-    font-size: 7vh;
+    font-size: 10vw;
     text-align: center;
   }
   #main #nosotros p {
     padding-top: 5vh;
-    font-size: 3.5vh;
-    line-height: 5.5vh;
+    font-size: 5.5vw;
+    line-height: 8vw;
   }
   #main #servicios {
     margin-top: 10vh;
@@ -659,7 +659,7 @@ body {
     width: 100vw;
     background-image: url(../assets/asset002.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     position: relative;
   }
   #main #servicios .servicios_container .servicios_container_camion .servicios_container_gradient {
@@ -677,17 +677,280 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20%;
+    padding: 9vw;
   }
   #main #servicios .servicios_container .servicios_container_textbox div h3 {
-    font-size: 3.5vh;
+    font-size: 6vw;
     font-weight: 500;
     border-bottom: solid 2px #005AB4;
     padding-bottom: 10px;
   }
   #main #servicios .servicios_container .servicios_container_textbox div p {
     padding-top: 2.5vh;
-    font-size: 2.5vh;
-    line-height: 3vh;
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+  #main #contenedores {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 75vh;
+    width: 100vw;
+    height: 120vh;
+    background-image: url(../assets/bg4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  #main #contenedores .contenedores_textbox {
+    width: 90vw;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 60vh;
+    left: 5vw;
+  }
+  #main #contenedores .contenedores_textbox div {
+    padding: 9vw;
+  }
+  #main #contenedores .contenedores_textbox div h3 {
+    font-size: 6vw;
+    font-weight: 500;
+    border-bottom: solid 2px #005AB4;
+    padding-bottom: 10px;
+  }
+  #main #contenedores .contenedores_textbox div p {
+    padding-top: 2.5vh;
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+  #main #contenedores .contenedores_img {
+    height: 60vh;
+    width: 100vw;
+    background-image: url(../assets/asset003.jpg);
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #main #equipo {
+    height: 60vh;
+  }
+  #main #equipo .equipo_textbox {
+    width: 90vw;
+    height: auto;
+    top: 60vh;
+    right: 5vw;
+    padding: 9vw;
+  }
+  #main #equipo .equipo_textbox h3 {
+    font-size: 6vw;
+    font-weight: 500;
+    border-bottom: solid 2px #005AB4;
+    padding-bottom: 10px;
+  }
+  #main #equipo .equipo_textbox p {
+    padding-top: 2.5vh;
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+  #main #pre_contacto {
+    margin-top: 80vh;
+  }
+  #main #pre_contacto h2 {
+    font-size: 14vw;
+  }
+  #main #contacto {
+    background-image: url(../assets/bg7.png);
+    background-size: 100vw 90vh;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10vw 55vw 35vw;
+    grid-template-columns: 10vw 55vw 35vw;
+    -ms-grid-rows: 10vh 70vh 10vh 80vh;
+    grid-template-rows: 10vh 70vh 10vh 80vh;
+        grid-template-areas: ". . side1" ". info info" ". . side2" "form form form";
+  }
+  #main #contacto form {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    grid-area: form;
+    padding: 10% 5vw;
+  }
+  #main #contacto form h4 {
+    font-size: 10vw;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  #main #contacto form div .inputtext {
+    background: none;
+    border: none;
+    width: 90vw;
+    margin: 30px 0;
+    height: 4vh;
+    font-size: 5vw;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  #main #contacto form div .mensaje {
+    font-weight: 200;
+  }
+  #main #contacto form div .sendbutton {
+    border: none;
+    height: 7vh;
+    width: 90vw;
+    margin-top: 3vh;
+  }
+  #main #contacto .info {
+    padding: 40px;
+  }
+  #main #contacto .info h4 {
+    font-size: 9vw;
+  }
+  #main #contacto .info .infotexto {
+    margin: 10vw 0;
+  }
+  #main #contacto .info .infotexto_long {
+    margin-bottom: 18vw;
+  }
+  #main #contacto .info p {
+    margin-left: 20px;
+    height: 25px;
+    font-size: 5vw;
+  }
+  #main #contacto .side1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: side1;
+  }
+  @media screen and (max-width: 768px) {
+  #main #contacto form {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+  }
+  #main #contacto .side1 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+  }
+  }
+  #main #contacto .side2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main #contacto .side2 img {
+    margin: 0 15px;
+    width: 25px;
+  }
+  #main #contacto .side2 .arrow {
+    display: none;
+  }
+  #footer {
+    margin-top: 15vh;
+    height: 60vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #footer .footer_logo {
+    width: 50vw;
+    height: 40%;
+    background-image: url(../assets/logo02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5vw 0;
+  }
+  #footer .footer_info {
+    width: 90vw;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 5vw 0;
+  }
+  #footer .footer_info p .bold {
+    font-weight: bold;
+  }
+  #footer .footer_menu {
+    width: 90vw;
+    height: 30%;
+    padding: 5vw 0;
+  }
+  #footer .footer_menu ul {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #footer .footer_menu ul li {
+    text-align: left;
+  }
+  #footer .footer_menu ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  #main #contacto form {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  #main #contacto .info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+  #main #contacto .side1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #main #contacto .side2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
   }
 }
