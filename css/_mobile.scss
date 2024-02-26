@@ -1,0 +1,152 @@
+@media screen and (max-width: 768px){
+    *{
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #header{
+    
+        .header_menu{
+    
+            .header_menu_izq{
+                display: none;  
+            }
+    
+            .header_menu_der{
+                width: 100vw;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    
+        .header_logo{
+            height: 30%; 
+            top: 8%;
+    
+            div{
+                width: 60vw;
+                height: 50vh;
+                background-image: url(../assets/logo02.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+           
+            h1{
+                // font-size: 30px;
+                font-size: 5vh;
+            }
+            
+            h2{
+                font-size: 2.5vh;
+            }
+        }
+    
+        .header_img{
+            position: absolute;
+            top: 43%;
+        }
+    }
+
+
+    #main{
+
+        margin-top: 35vh;
+
+        #nosotros{
+            height: auto;
+            background-image: url(../assets/bg2.png);
+            background-size: cover;
+            background-position: center left;
+            padding: 5vh 5vw;
+    
+            h2{
+                font-size: 7vh;
+                text-align: center;
+            }
+    
+            p{
+                padding-top: 5vh;
+                font-size: 3.5vh;
+                line-height: 5.5vh;
+            }
+        }
+
+        #servicios{
+            margin-top: 10vh;
+    
+            h2{
+                font-size: 7vh;
+
+            }
+    
+            .shape{
+                @extend %arrow;
+            }
+    
+            .servicios_container{
+                margin-top: 5vh;
+                height: auto;
+                background-image: url(../assets/bg3.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center right;
+                display: flex;
+                flex-direction: column;
+    
+                .servicios_container_camion{
+                    height: 60vh;
+                    width: 100vw;
+                    background-image: url(../assets/asset002.jpg);
+                    background-size: cover;
+                    background-position: right;
+                    position: relative;
+    
+                    .servicios_container_gradient{
+                        position: absolute;
+                        right: 0;
+                        height: 100%;
+                        width: 10vw;
+                        background-image: linear-gradient(to top,
+                        rgba(0, 50, 101, 0.95),
+                        rgba(0, 50, 101, 0.95));
+                    }
+                }
+    
+                .servicios_container_textbox{
+
+                    div{
+                        width: 90vw;
+                        margin: 0 5vw;
+                        height: 55vh;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: 20%;
+    
+                        h3{
+                            font-size: 3.5vh;
+                            font-weight: 500;
+                            border-bottom: solid 2px #005AB4;
+                            padding-bottom: 10px;
+                        }
+    
+                        p{
+                            padding-top: 2.5vh;
+                            font-size: 2.5vh;
+                            line-height: 3vh;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
